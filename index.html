@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilkantha Academy - Excellence in Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+            <img src="assets/nilkantha logo.png" alt="Nilkantha Academy Logo" class="logo-image">
+            <span class="logo-text">NILKANTHA ACADEMY</span>
+        </a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="academics.html" class="nav-link">Academics</a></li>
+                <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="hero">
+                <div class="hero-slides">
+                    <div class="hero-slide" style="background-image: url('assets/image2.jpg');"></div>
+                    <div class="hero-slide" style="background-image: url('assets/image3.jpg');"></div>
+                    <div class="hero-slide" style="background-image: url('assets/image4.jpg');"></div>
+                </div>
+                <div class="hero-content">
+                    <h1>Welcome to Nilkantha Academy</h1>
+                    <p>Nurturing Excellence, Building Future Leaders</p>
+                    <a href="about.html" class="cta-button">DISCOVER OUR MISSION</a>
+                </div>
+                <div class="hero-dots">
+                    <span class="dot" onclick="setSlide(0)"></span>
+                    <span class="dot" onclick="setSlide(1)"></span>
+                    <span class="dot" onclick="setSlide(2)"></span>
+                </div>
+            </div>
+            <div class="features">
+                <a href="academics.html" class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Quality Education</h3>
+                    <p>Comprehensive curriculum designed to foster academic excellence and critical thinking skills in
+                        every student.</p>
+                </a>
+                <a href="faculty.html" class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Expert Faculty</h3>
+                    <p>Dedicated and experienced teachers committed to providing personalized attention and guidance.
+                    </p>
+                </a>
+                <a href="gallery.html" class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Holistic Development</h3>
+                    <p>Balanced approach to education focusing on academics, sports, arts, and character building.</p>
+                </a>
+            </div>
+            ```
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p><strong>📍 Address:</strong><br>
+                    Nilkantha Academy<br>
+                    Kathmandu, Nepal<br>
+                    Bagmati Province</p>
+                <p><strong>📞 Phone:</strong><br>
+                    +977-1-234-5678<br>
+                    +977-1-234-5679</p>
+                <p><strong>✉️ Email:</strong><br>
+                    info@nilkanthaacademy.edu.np<br>
+                    admissions@nilkanthaacademy.edu.np</p>
+                <p><strong>🕐 Office Hours:</strong><br>
+                    Monday - Friday: 8:00 AM - 5:00 PM<br>
+                    Saturday: 8:00 AM - 1:00 PM<br>
+                    Sunday: Closed</p>
+            </div>
+            <div class="footer-map">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.054602459013!2d87.2694522150362!3d26.6361039832436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6e4f7b6f9c1f%3A0x9f8b9c6b3e4b5a2!2sItahari%2C%20Nepal!5e0!3m2!1sen!2snp!4v1698767891234!5m2!1sen!2snp"
+                    width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nilkantha Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

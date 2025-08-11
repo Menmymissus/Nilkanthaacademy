@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nilkantha Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+            <img src="assets/nilkantha logo.png" alt="Nilkantha Academy Logo" class="logo-image">
+            <span class="logo-text">NILKANTHA ACADEMY</span>
+        </a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="academics.html" class="nav-link">Academics</a></li>
+                <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Contact Page -->
+        <div id="contact" class="page active">
+            <div class="content-card">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Get in touch with us for admissions, inquiries, or any other information about Nilkantha Academy.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h3>Contact Information</h3>
+                        <p><strong>📍 Address:</strong><br>
+                        Nilkantha Academy<br>
+                        Kathmandu, Nepal<br>
+                        Bagmati Province</p>
+                        
+                        <p><strong>📞 Phone:</strong><br>
+                        +977-1-234-5678<br>
+                        +977-1-234-5679</p>
+                        
+                        <p><strong>✉️ Email:</strong><br>
+                        info@nilkanthaacademy.edu.np<br>
+                        admissions@nilkanthaacademy.edu.np</p>
+                        
+                        <p><strong>🕐 Office Hours:</strong><br>
+                        Monday - Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 8:00 AM - 1:00 PM<br>
+                        Sunday: Closed</p>
+
+                        <ul class="social-icons">
+                            <li><a href="https://wa.me/977123456789" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="https://facebook.com/nilkanthaacademy" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://tiktok.com/@nilkanthaacademy" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div>
+                        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-map">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.054602459013!2d87.2694522150362!3d26.6361039832436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6e4f7b6f9c1f%3A0x9f8b9c6b3e4b5a2!2sItahari%2C%20Nepal!5e0!3m2!1sen!2snp!4v1698767891234!5m2!1sen!2snp"
+                    width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nilkantha Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

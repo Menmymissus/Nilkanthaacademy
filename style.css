@@ -356,13 +356,18 @@ body {
 }
 
 .faculty-image {
-    height: 200px;
+    height: 400px;
     background: linear-gradient(135deg, #ffcc80 0%, #ffb74d 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
     color: white;
+}
+.faculty-image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .faculty-info {
@@ -409,6 +414,11 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .gallery-item:hover {
@@ -698,3 +708,66 @@ body {
     transform: translateY(-3px); /* Lift effect like .cta-button */
     box-shadow: 0 5px 10px rgba(255, 143, 0, 0.3); /* Orange shadow */
 }
+
+
+/* Added styles for the new teacher section */
+/* .teacher-section {
+    margin-top: 40px;
+}
+.teacher-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+.teacher-card {
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.teacher-image {
+    font-size: 40px; /* Smaller emoji size */
+    /* margin-bottom: 5px;
+}
+.teacher-card h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+} */
+ /* Updated styles for the teacher section with images */
+        .teacher-section {
+            margin-top: 40px;
+        }
+        .teacher-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .teacher-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        .teacher-card {
+            text-align: center;
+            background: #fff0da;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .teacher-image img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+        .teacher-card h4 {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
